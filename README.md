@@ -26,6 +26,7 @@ El grupo de estudiantes se dividió las páginas del sitio para realizarlas en u
 -Prof. FREDES Bárbara    (Matemática)
 
 -Prof. SOSA Florencia    (Ciencias Sociales)
+
 -Prof. AZEGLIO Fabrizio  (Programación y quien les escribe)
 
-Si estás leyendo esto y estás interesado en conocernos... utilizá la botonera de navegación y dirigite a la página "Nosotros" para aunque sea conocernos las caras. :)
+#Si estás leyendo esto y estás interesado en conocernos... utilizá la botonera de navegación y dirigite a la página "Nosotros" para aunque sea conocernos las caras. :)
