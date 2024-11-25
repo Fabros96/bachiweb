@@ -1,0 +1,623 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid white; */
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(180deg, rgba(26, 26, 46, 1) 0%, rgb(0, 92, 153)100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+#botonera {
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0px 5px;
+    display: inline-block;
+    transition: all 0.4s;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+#botonera a:hover {
+    border: 2px solid whitesmoke;
+    background-color: rgb(255 255 255 / 50%);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+
+}
+
+
+/* -----------NUEVO--------------- */
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el título de cada sección */
+section h2 {
+    color: #00c6d6;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilos para el texto de cada sección */
+section p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos para las imágenes */
+section img {
+    width: 350px;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para los videos */
+section video {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.61);
+}
+
+/* Contenedor de la imagen y el texto */
+.contenido-seccion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos específicos para las imágenes */
+.contenido-seccion img {
+    width: 350px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos específicos para el texto en flexbox */
+.contenido-seccion p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.profe {
+    display: flex;
+    flex-direction: column;
+    /* Coloca el contenido en una columna */
+    align-items: center;
+    /* Centra el contenido horizontalmente */
+    text-align: center;
+    /* Alinea el texto en el centro */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    /* Espacio alrededor del contenido */
+}
+
+.profe h2 {
+    font-size: 24px;
+    /* Ajusta el tamaño del título principal */
+    margin-bottom: 10px;
+}
+
+.profe h3 {
+    font-size: 18px;
+    /* Ajusta el tamaño del subtítulo */
+    margin-bottom: 20px;
+    /* Añade un margen debajo del subtítulo */
+}
+
+.profe {
+    display: flex;
+    justify-content: center;
+}
+
+.circular-image {
+    width: 125px;
+    /* Ajusta el tamaño según lo necesites */
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+    object-fit: cover;
+    /* Ajusta la imagen dentro del contenedor circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circular-image:hover {
+    transform: scale(1.65);
+    /* Aumenta un poco el tamaño al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    /* Añade sombra al pasar el ratón */
+}
+
+.profes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* AREAS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid white; */
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+#botonera {
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0px 5px;
+    display: inline-block;
+    transition: all 0.4s;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+#botonera a:hover {
+    border: 2px solid whitesmoke;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+
+/* -----------NUEVO--------------- */
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el título de cada sección */
+section h2 {
+    color: #008bd6;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Estilos para el texto de cada sección */
+section p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilos para las imágenes */
+section img {
+
+    width: 80%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para los videos */
+section video {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* h2 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 1);
+} */
+
+/* Contenedor de la imagen y el texto */
+.contenido-seccion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos específicos para las imágenes */
+.contenido-seccion img {
+    width: 350px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos específicos para el texto en flexbox */
+.contenido-seccion p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.imagen {
+    width: 60%;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Horizontally center the image */
+    align-items: center;
+}
+
+/* FIN AREAS */
+
+/* MORE */
+.portadaMore {
+    width: 50%;
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin: 20px auto;
+    /* Agrega margen para separar el div de otros elementos */
+}
+
+.portadaMore img {
+    display: block;
+    /* Asegura que la imagen sea un bloque separado */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    width: 40%;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portadaMore img:hover {
+    transform: scale(1.45);
+    /* Aumenta un poco el tamaño al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.521);
+    /* Añade sombra al pasar el ratón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portadaMore br {
+    margin-bottom: 10px;
+    /* Añade un poco de espacio entre la imagen y el texto */
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: .5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: scale-down;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-btn.prev {
+    left: 1rem;
+}
+
+.slider-btn.next {
+    right: 1rem;
+}
+
+h3 li {
+    letter-spacing: 0.5px;
+    padding: 10px;
+}
+
+.imgFabri {
+
+    width: 100%;
+    text-align: center;
+    /* margin: 20px auto; */
+
+}
+
+.imgFabri img {
+    display: block;
+    /* Asegura que la imagen sea un bloque separado */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    width: 40%;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: top left;
+    /* Establece el origen de la transformación en la parte superior izquierda */
+}
+
+.imgFabri img:hover {
+    transform: scale(1.45) translate(-25%, -25%);
+    /* Aumenta el tamaño de la imagen y la mueve hacia arriba a la izquierda */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.521);
+    /* Añade sombra al pasar el ratón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgFabri br {
+    margin-bottom: 10px;
+    /* Añade un poco de espacio entre la imagen y el texto */
+}
+
+.tarjeta {
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #ffffff42;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.65);
+    /* Aumenta un poco el tamaño al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tarjeta p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.imagenes {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.imagenes img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.imagenes img:nth-child(2) {
+    left: 30px;
+    /* Superponer la segunda imagen */
+}
+
+.imagenes img:nth-child(3) {
+    left: 60px;
+    /* Superponer la tercera imagen */
+}
+
+
+.calculadora {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculadora:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+label {
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input {
+    padding: 12px;
+    margin: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.btnCalculadora {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnCalculadora:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+.btnCalculadora:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+
+    input,
+    button {
+        font-size: 14px;
+    }
+}
+
+#resultado-container {
+    display: none;
+    background-color: #e7f7e7;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}

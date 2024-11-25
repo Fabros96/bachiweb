@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciencias Naturales</title>
+    <link rel="stylesheet" href="../Css/estilo.css">
+    <link rel="stylesheet" href="https://pyscript.net/snapshots/2024.9.2/core.css" />
+    <script type="module" src="https://pyscript.net/snapshots/2024.9.2/core.js"></script>
+</head>
+
+<body>
+    <div id="botonera">
+        <a href="../index.html">Inicio</a>
+        <a href="csnaturales.html">Naturales</a>
+        <a href="cssociales.html">Sociales</a>
+        <a href="matematica.html">Matemática</a>
+        <a href="lengua.html">Lengua</a>
+        <a href="programacion.html">Programación</a>
+        <a href="areas.html">Áreas</a>
+        <a href="nosotros.html">Nosotros</a>
+    </div>
+    <div class="tarjeta">
+        <p>Hecho por:</p>
+        <div class="imagenes">
+            <img src="../Recursos/Nosotros/Alfred.jpg" alt="Imagen 1">
+            <img src="../Recursos/Nosotros/Agus.jpg" alt="Imagen 2">
+            <img src="../Recursos/Nosotros/Negrito.png" alt="Imagen 3">
+        </div>
+    </div>
+    <section>
+
+        <h2>
+            Genética: Herencia del ADN
+        </h2>
+        <div class="contenido-seccion" style="gap: 50px;">
+            <img src="../Recursos/ADN.gif" alt="ADN" class="flotante"
+                style="width: 150px; height: 150px; box-shadow: none;">
+            <p>
+                Toda la información genética está contenida en la molécula de ácido desoxirribonucleico (ADN; <i>DNA en
+                    inglés</i> )
+                que se encuentra en el núcleo celular. El ADN normalmente se encuentra en forma de sustancia amorfa
+                (como un ovillo de lana enredado) que se denomina CROMATINA. En otro compactas y se denominan
+                CROMOSOMAS.
+            </p>
+            <img src="../Recursos/adn.png" style="width: 35%;">
+        </div>
+    </section>
+    <section>
+        <h2>Transmisión de los caracteres hereditarios:</h2>
+        <div class="profes">
+            <div class="contenido-seccion">
+
+                <p>
+                    Los genes están contenidos en los cromosomas, por lo que los organismos diploides tenemos dos copias
+                    de cada gen (1 materno, 1 paterno). Cada una de las variantes de un gen se denomina
+                    <i><b>Alelo</b></i>. <br>Como heredamos un cromosoma de la madre y otro del padre tenemos un gen
+                    paterno con un determinado alelo y otro
+                    materno con otro alelo; y ambos pueden ser iguales o distintos. Cuando un organismo presenta sus dos
+                    alelos
+                    iguales para un determinado gen se dice que es <u><b>HOMOCIGOTA</b></u> para dicho gen, y cuando los
+                    tiene distintos se
+                    denomina <u><b>HETEROCIGOTA</b></u>. Por ejemplo, si el gen 1 tiene dos alelos A y a; las
+                    combinaciones homocigotas serán
+                    AA y aa y la heterocigota será Aa.
+                </p>
+                <img src="../Recursos/Patooooooooooooooo.png" alt="" style="width: 100%;">
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h1 style="color: whitesmoke;">
+            Probalo vos mismo</h1>
+        <br><br>
+        <div style="display: flex; justify-content: center;">
+
+            <div class="calculadora">
+                <h3 style="color: black;">Calculadora Genética</h3>
+                <label for="alelo_materno">Alelos Maternos (AA, Aa, aa):</label>
+                <input type="text" id="alelo_materno" placeholder="Ingrese el alelo materno">
+
+                <label for="alelo_paterno">Alelos Paternos (AA, Aa, aa):</label>
+                <input type="text" id="alelo_paterno" placeholder="Ingrese el alelo paterno">
+
+                <button class="btnCalculadora" onclick="calcular()">Calcular Fenotipo</button>
+
+                <div id="resultado-container">
+                    <div id="resultado"></div>
+                </div>
+            </div>
+
+            <script>
+                function calcular() {
+                    // Obtener los valores de los alelos
+                    const aleloMaterno = document.getElementById("alelo_materno").value;
+                    const aleloPaterno = document.getElementById("alelo_paterno").value;
+
+                    // Calcular el resultado
+                    let resultado = "";
+                    if (aleloMaterno === "AA" || aleloPaterno === "AA") {
+                        resultado = "O(cero) si uno de los progenitores es Homocigota Dominante.";
+                    } else if (aleloMaterno === "Aa" && aleloPaterno === "Aa") {
+                        resultado = "Ambas personas son Heterocigotas, la probabilidad será de 25%.";
+                    } else if (aleloMaterno === "Aa" && aleloPaterno === "aa") {
+                        resultado = "Alelos maternos Heterocigotas y paternos Homocigotas Recesivos, la probabilidad será de un 50%.";
+                    } else if (aleloMaterno === "aa" && aleloPaterno === "Aa") {
+                        resultado = "Alelos maternos Homocigotas Recesivos y paternos Heterocigotas, la probabilidad será de un 50%.";
+                    } else if (aleloMaterno === "aa" && aleloPaterno === "aa") {
+                        resultado = "Ambos son Homocigotas Recesivos. Salvo una mutación, la probabilidad será del 100%.";
+                    } else {
+                        resultado = "Solo coloque letras a mayúsculas o minúsculas.";
+                    }
+
+                    // Mostrar el resultado
+                    document.getElementById("resultado").innerText = resultado;
+
+                    // Hacer visible el contenedor del resultado
+                    document.getElementById("resultado-container").style.display = "block";
+                }
+            </script>
+
+        </div>
+    </section>
+</body>
+
+</html>
