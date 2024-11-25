@@ -16,11 +16,15 @@ El grupo de estudiantes se dividió las páginas del sitio para realizarlas en u
 - PONCE, Tiago
 - SILVEYRA, Morena
 
-#Acompañados en sus trayectorias por los profes
+#Acompañados en sus trayectorias por los profes:
 -Prof. CHAMBÓN Victor    (Lengua y literatura)
+
 -Prof. CASTRO Alfredo    (Ciencias Naturales)
+
 -Prof. PONCE Mayra       (Trayectoria)
+
 -Prof. FREDES Bárbara    (Matemática)
+
 -Prof. SOSA Florencia    (Ciencias Sociales)
 -Prof. AZEGLIO Fabrizio  (Programación y quien les escribe)
 
